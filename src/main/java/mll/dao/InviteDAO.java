@@ -41,7 +41,7 @@ public class InviteDAO
 					session.update(invite.getToken());
 					invite.setIsGenerated(true);
 					invite.setMessage("Invite has been sent successfully.");
-					invite.setUrl("http://ec2-54-71-208-20.us-west-2.compute.amazonaws.com:8080/MLL/index.html#/"+ invite.getToken().getInviteType() + "/registration/token/" + invite.getToken().getToken());
+					invite.setUrl("http://localhost:9000/MLL/index.html#/"+ invite.getToken().getInviteType() + "/registration/token/" + invite.getToken().getToken());
 				}
 				else
 				{
